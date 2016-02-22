@@ -13,6 +13,7 @@ session_start();
         $n = rand(0, $alphaLength);
         $pass[] = $alphabet[$n];
     }
+        
     return implode($pass); //turn the array into a string
 }
 
@@ -43,7 +44,7 @@ session_start();
 
   try
 
-  { 
+  {
 
   if(empty($image)){
 
@@ -53,7 +54,7 @@ session_start();
 
     // $to = "{$email}";
     //      $subject = 'Acount Confirmation';
-         
+
     //      $message = "<h2>Congratulations {$first_name}</h2>";
     //      $message .= "<p>Your account has been successfully confirmed,please visit the following link to login.</p>";
     //      $message .= "<p>Username: {$email}</p>";
@@ -72,9 +73,9 @@ session_start();
     //      $header .= 'Cc:trade@rdxsports.com' ."\r\n";
     //      $header .= 'MIME-Version: 1.0' ."\r\n";
     //      $header .= 'Content-type: text/html' ."\r\n";
-         
+
     //      $retval = mail ($to,$subject,$message,$header);
-         
+
     //      if( $retval == true ) {
     //         header("location:customers.php");
     //      }else {
@@ -82,7 +83,7 @@ session_start();
     //      }
 
    header("location:customers.php");
-     
+
 
   }
     else{
@@ -98,7 +99,7 @@ session_start();
    header("location:customers.php");
 
     }
-   
+
   }
 
   catch(PDOException $e){
